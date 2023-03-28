@@ -8,7 +8,7 @@ body {
 
 .screen-wrapper {
   display: grid;
-  grid-template-columns: 232px 1fr;
+  grid-template: "mySidebar myHeader" "mySidebar myContent";
   width: 100vw;
   background: #F2F4F7;
   font-style: normal;
@@ -17,6 +17,9 @@ body {
   line-height: 22px;
 }
 
+.content {
+  grid-area: myContent;
+}
 .content__block {
   margin: 32px;
   border-radius: 16px;

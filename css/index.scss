@@ -8,7 +8,7 @@ body{
 
 .screen-wrapper{
   display: grid;
-  grid-template-columns: 232px 1fr;
+  grid-template: 'mySidebar myHeader' 'mySidebar myContent';
   width: 100vw;
 
   background: #F2F4F7;
@@ -20,6 +20,9 @@ body{
 }
 
 .content{
+
+  grid-area: myContent;
+
   &__block{
     margin: 32px;
     border-radius: 16px;
@@ -61,3 +64,4 @@ a{
   text-decoration: none;
   color: #5F6980;
 }
+
