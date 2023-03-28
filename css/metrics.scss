@@ -1,0 +1,75 @@
+.metrics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card{
+  position: relative;
+
+  padding: 20px;
+
+  background: #FFFFFF;
+
+  border-radius: 12px;
+
+  width: 262px;
+  height: 162px;
+
+  &__title{
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #5F6980;
+
+    margin-bottom: 10px;
+  }
+
+  &__amount{
+    font-weight: 600;
+    font-size: 26px;
+
+    color: #282828;
+
+    margin-bottom: 38px;
+  }
+
+  &__percent{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 24px;
+    width: 54px;
+
+    font-weight: 600;
+    font-size: 12px;
+
+    color: #5F6980;
+
+    background-color: #F2F4F7;
+    border-radius: 12px;
+  }
+
+  &__percent--positive{
+    background-color: #DCFFF5;
+    color: #20C997;
+  }
+
+  &__percent--negative{
+    background-color: #FFE0E3;
+    color: #DC3545;
+  }
+
+  &__info{
+    display: inline;
+
+    margin-left: 8px;
+
+    font-weight: 600;
+    font-size: 12px;
+
+    color: #9D9FA1;
+  }
+}

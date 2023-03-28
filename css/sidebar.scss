@@ -1,0 +1,103 @@
+.sidebar{
+
+  flex-basis: 232px;
+  position: sticky;
+  top: 0;
+
+  width: 232px;
+  height: 100vh;
+
+  background: #FFFFFF;
+
+  border: 1px solid #EAECF0;
+
+
+  &__brand{
+    margin: 23px 0 56px 25px;
+  }
+
+  &__header{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #9D9FA1;
+    margin: 32px 0 16px 20px;
+  }
+
+  &__action-buttons{
+    position: absolute;
+    bottom: 0;
+
+    padding: 0 23px;
+
+    width: inherit;
+    height: 44px;
+
+    border-top: 1px solid #EAECF0;
+  }
+}
+
+.clonify-brand{
+  display: flex;
+  gap: 5px;
+
+  align-items: center;
+}
+
+.navbar-section{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-height: 46px;
+
+  padding: 0 23px;
+
+  cursor: pointer;
+
+
+  &__icon{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    &--active{
+      filter: var(--active-filter);
+      will-change: transform;
+    }
+
+  }
+
+  &__title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+
+    &--active{
+      color: #282828;
+    }
+  }
+
+  &__chevron{
+    margin-left: auto;
+
+    &--active{
+      filter: var(--active-filter);
+      transform: rotate(180deg);
+      will-change: transform;
+    }
+  }
+
+  &:hover{
+    filter: var(--active-filter);
+    will-change: transform;
+  }
+}
+
+.action-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
