@@ -1,12 +1,12 @@
-.chart{
+.chart {
 
   background: #FFFFFF;
 
-  &__wrapper{
+  &__wrapper {
     position: relative;
   }
 
-  &__rows{
+  &__rows {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,7 +21,7 @@
 
   }
 
-  &__columns{
+  &__columns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,26 +29,28 @@
     margin-left: 65px;
     margin-bottom: 32px;
 
+    width: 94%;
+
     font-weight: 400;
     font-size: 12px;
     color: #9D9FA1;
   }
 
-  &__graphic{
+  &__graphic {
     position: absolute;
 
     top: 0;
-    left: 53px;
+    left: 65px;
 
     display: inline;
     vertical-align: middle;
 
     height: 260px;
+    width: 94%;
 
-    width: 95%;
   }
 
-  &__defs{
+  &__defs {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -61,13 +63,13 @@
     color: #5F6980;
   }
 
-  &__defs-item{
+  &__defs-item {
     display: flex;
     align-items: center;
     gap: 8px;
   }
 
-  &__defs-color{
+  &__defs-color {
     width: 12px;
     height: 12px;
 
@@ -75,11 +77,51 @@
     border-radius: 50%;
   }
 
-  &__defs-color--blue{
+  &__defs-color--blue {
     background: #5A9CFE;
   }
 
-  &__defs-color--green{
+  &__defs-color--green {
     background: #20C997;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .chart {
+    &__graphic {
+      width: 92%;
+    }
+
+    &__columns {
+      width: 92%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .chart {
+    &__graphic {
+      width: 84%;
+
+      left: 57px;
+    }
+
+    &__columns {
+      width: 84%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chart {
+    &__graphic {
+      width: 82%;
+      left: 57px;
+
+    }
+
+    &__columns {
+      width: 82%;
+    }
   }
 }
