@@ -8,6 +8,7 @@
   border: 1px solid #EAECF0;
 }
 .sidebar__brand {
+  display: flex;
   margin: 23px 0 56px 25px;
 }
 .sidebar__header {
@@ -28,7 +29,6 @@
 }
 
 .clonify-brand {
-  display: flex;
   gap: 5px;
   align-items: center;
 }

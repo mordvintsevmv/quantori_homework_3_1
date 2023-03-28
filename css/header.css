@@ -1,34 +1,45 @@
 .header {
+  position: relative;
   grid-area: myHeader;
   display: flex;
+  gap: 36px;
   align-items: center;
   justify-content: space-evenly;
   background: #FFFFFF;
   height: 66px;
+  width: calc(100vw - 232px);
   border-bottom: 1px solid #EAECF0;
+}
+.header__brand {
+  display: none;
 }
 .header__input-search {
   height: 46px;
-  width: 900px;
+  width: 50vw;
   background: url(../img/search-icon.svg) no-repeat 19px center;
   padding-left: 44px;
   border: #EAECF0 1px solid;
   border-radius: 6px;
 }
-.header__icon {
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__icon-item {
   position: relative;
   cursor: pointer;
   width: 24px;
   height: 24px;
 }
-.header__icon img {
+.header__icon-item img {
   width: 24px;
 }
-.header__icon img:hover {
+.header__icon-item img:hover {
   filter: var(--active-filter);
   will-change: transform;
 }
-.header__icon--notification::after {
+.header__icon-item--notification::after {
   content: "";
   position: absolute;
   top: -7px;
@@ -59,6 +70,45 @@
   border: 1.5px solid #FFFFFF;
   border-radius: 50%;
   background: #20C997;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100vw;
+  }
+  .header__brand {
+    display: flex;
+  }
+  .header__icons {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 26px 16px;
+    width: 100vw;
+    height: 150px;
+    display: block;
+  }
+  .header__brand {
+    position: absolute;
+    display: flex;
+    top: 26px;
+    left: 16px;
+  }
+  .header__avatar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  .header__icons {
+    display: none;
+  }
+  .header__input-search {
+    position: absolute;
+    width: 95vw;
+    top: 80px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
