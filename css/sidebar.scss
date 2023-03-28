@@ -1,17 +1,17 @@
+@import "variables";
+
 .sidebar{
-
-  grid-area: mySidebar;
-
   position: sticky;
   top: 0;
+
+  grid-area: mySidebar;
 
   width: 232px;
   height: 100vh;
 
-  background: #FFFFFF;
+  background: $white;
 
-  border: 1px solid #EAECF0;
-
+  border: 1px solid $border-grey;
 
   &__brand{
     display: flex;
@@ -38,7 +38,7 @@
     width: inherit;
     height: 44px;
 
-    border-top: 1px solid #EAECF0;
+    border-top: 1px solid $border-grey;
   }
 }
 
@@ -76,7 +76,7 @@
     line-height: 22px;
 
     &--active{
-      color: #282828;
+      color: $dark-grey;
     }
   }
 

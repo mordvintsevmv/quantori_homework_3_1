@@ -1,3 +1,5 @@
+@import "variables";
+
 .metrics{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(262px, 1fr));
@@ -10,7 +12,7 @@
 
   padding: 20px;
 
-  background: #FFFFFF;
+  background: $white;
 
   box-shadow: 0 1px 10px 0 #0000000F;
 
@@ -23,7 +25,7 @@
     font-weight: 400;
     font-size: 16px;
 
-    color: #5F6980;
+    color: $grey;
 
     margin-bottom: 10px;
   }
@@ -32,7 +34,7 @@
     font-weight: 600;
     font-size: 26px;
 
-    color: #282828;
+    color: $dark-grey;
 
     margin-bottom: 38px;
   }
@@ -48,15 +50,15 @@
     font-weight: 600;
     font-size: 12px;
 
-    color: #5F6980;
+    color: $grey;
 
-    background-color: #F2F4F7;
+    background-color: $light-grey;
     border-radius: 12px;
   }
 
   &__percent--positive{
-    background-color: #DCFFF5;
-    color: #20C997;
+    background-color: $light-green;
+    color: $green;
   }
 
   &__percent--negative{

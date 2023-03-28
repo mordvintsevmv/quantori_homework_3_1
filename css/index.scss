@@ -1,3 +1,5 @@
+@import "variables";
+
 body{
   font-family: 'Inter', sans-serif;
 }
@@ -11,7 +13,7 @@ body{
   grid-template: 'mySidebar myHeader' 'mySidebar myContent';
   width: 100vw;
 
-  background: #F2F4F7;
+  background: $light-grey;
 
   font-style: normal;
   font-weight: 400;
@@ -37,7 +39,7 @@ body{
     align-items: center;
 
     height: 62px;
-    border-bottom: 1px solid #EAECF0;
+    border-bottom: 1px solid $border-grey;
   }
 
   &__block-title{
@@ -64,7 +66,7 @@ body{
 
 a{
   text-decoration: none;
-  color: #5F6980;
+  color: $grey;
 }
 
 @media screen and (max-width: 900px) {
