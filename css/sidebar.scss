@@ -99,5 +99,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  &__item{
+    cursor: pointer;
+  }
+
+  &__item:hover{
+    filter: var(--active-filter);
+    will-change: transform;
+  }
 }
 
