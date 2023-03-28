@@ -1,6 +1,8 @@
+@import "variables";
+
 .data-table {
 
-  background: #FFFFFF;
+  background: $white;
   padding-bottom: 31px;
 
   box-shadow: 0 1px 10px 0 #0000000F;
@@ -32,7 +34,7 @@
     font-weight: 400;
     font-size: 18px;
 
-    color: #282828;
+    color: $dark-grey;
   }
 
   &__navigation-next {
@@ -61,7 +63,7 @@
   & td, & th {
     font-weight: 400;
     font-size: 14px;
-    color: #5F6980;
+    color: $grey;
 
     text-align: left;
   }
@@ -80,7 +82,7 @@
   }
 
   &__row {
-    border-bottom: 1px solid #EAECF0;
+    border-bottom: 1px solid $border-grey;
   }
 
   &__source {
@@ -95,7 +97,7 @@
   &__source-name {
     font-weight: 600;
     font-size: 14px;
-    color: #282828;
+    color: $dark-grey;
 
   }
 
@@ -110,23 +112,22 @@
 
     padding: 0 10px;
 
-    background-color: #F2F4F7;
+    background-color: $light-grey;
     border-radius: 100px;
 
     font-weight: 600;
     font-size: 12px;
-    color: #5F6980;
+    color: $grey;
     text-align: center;
   }
 
   &__status--active {
-    background-color: #DCFFF5;
-    color: #20C997;
+    background-color: $light-green;
+    color: $green;
   }
 
   &__status--pending {
-    background-color: #FFEAD8;
-    color: #FD7E14;
+    background-color: $light-orange;
+    color: $orange;
   }
-
 }

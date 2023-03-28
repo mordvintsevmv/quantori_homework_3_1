@@ -1,14 +1,16 @@
+@import "variables";
+
 .banner {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
-  background: #282828;
+  background: $dark-grey;
 
   padding: 32px 36px;
 
-  color: #FFFFFF;
+  color: $white;
 
   box-shadow: 0 1px 10px 0 #0000000F;
 
@@ -42,7 +44,7 @@
 
   border-radius: 39px;
 
-  background: #FFFFFF;
+  background: $white;
 
   cursor: pointer;
 
@@ -50,7 +52,7 @@
 
 
   &__text {
-    color: #282828;
+    color: $dark-grey;
     font-weight: 600;
     font-size: 16px;
   }

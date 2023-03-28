@@ -1,3 +1,5 @@
+@import "variables";
+
 .header {
 
   position: relative;
@@ -9,12 +11,12 @@
   align-items: center;
   justify-content: space-evenly;
 
-  background: #FFFFFF;
+  background: $white;
 
   height: 66px;
   width: calc(100vw - 232px);
   
-  border-bottom: 1px solid #EAECF0;
+  border-bottom: 1px solid $border-grey;
 
   &__brand{
     display: none;
@@ -27,13 +29,13 @@
     background: url(../img/search-icon.svg) no-repeat 19px center;
     padding-left: 44px;
 
-    border: #EAECF0 1px solid;
+    border: $border-grey 1px solid;
     border-radius: 6px;
   }
 
   &__input-search:focus{
     outline: none;
-    border: 1px solid #282828;
+    border: 1px solid $dark-grey;
     border-radius: 6px;
   }
 
@@ -73,7 +75,7 @@
         width: 10px;
         height: 10px;
 
-        border: 1.5px solid #FFFFFF;
+        border: 1.5px solid $white;
         border-radius: 50%;
 
         background: #E25563;
@@ -107,10 +109,10 @@
   width: 10px;
   height: 10px;
 
-  border: 1.5px solid #FFFFFF;
+  border: 1.5px solid $white;
   border-radius: 50%;
 
-  background: #20C997;
+  background: $green;
 }
 
 @media screen and (max-width: 900px) {
