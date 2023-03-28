@@ -17,11 +17,15 @@
 
     font-weight: 600;
     font-size: 28px;
+    line-height: 38px;
+
   }
 
   &__text-description {
     font-weight: 400;
     font-size: 14px;
+    line-height: 22px;
+
   }
 }
 
@@ -54,7 +58,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .banner {
     display: flex;
     flex-direction: column;
@@ -65,12 +69,15 @@
 
     &__text-title {
       font-size: 26px;
-
       text-align: center;
+
+      margin-bottom: 8px;
     }
 
     &__text-description {
       text-align: center;
+      margin-bottom: 6px;
     }
   }
 }
+
