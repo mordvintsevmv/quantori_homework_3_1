@@ -21,6 +21,11 @@
   border: #EAECF0 1px solid;
   border-radius: 6px;
 }
+.header__input-search:focus {
+  outline: none;
+  border: 1px solid #282828;
+  border-radius: 6px;
+}
 .header__icons {
   display: flex;
   align-items: center;
