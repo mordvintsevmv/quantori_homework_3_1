@@ -12,10 +12,12 @@
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 28px;
+  line-height: 38px;
 }
 .banner__text-description {
   font-weight: 400;
   font-size: 14px;
+  line-height: 22px;
 }
 
 .upgrade-button {
@@ -39,7 +41,7 @@
   filter: invert(100%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .banner {
     display: flex;
     flex-direction: column;
@@ -50,9 +52,11 @@
   .banner__text-title {
     font-size: 26px;
     text-align: center;
+    margin-bottom: 8px;
   }
   .banner__text-description {
     text-align: center;
+    margin-bottom: 6px;
   }
 }
 
