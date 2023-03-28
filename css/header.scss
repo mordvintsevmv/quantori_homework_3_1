@@ -23,7 +23,7 @@
 
   &__input-search {
     height: 46px;
-    width: 50vw;
+    width: 60vw;
 
     background: url(../img/search-icon.svg) no-repeat 19px center;
     padding-left: 44px;
@@ -50,13 +50,10 @@
     position: relative;
 
     cursor: pointer;
-
-    width: 24px;
-    height: 24px;
   }
 
   &__icon-item img {
-    width: 24px;
+    width: 18px;
 
     &:hover {
       filter: $active-filter;
@@ -157,6 +154,13 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .header {
+    &__input-search {
+      width: 50vw;
+    }
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .header {

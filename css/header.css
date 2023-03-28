@@ -15,7 +15,7 @@
 }
 .header__input-search {
   height: 46px;
-  width: 50vw;
+  width: 60vw;
   background: url(../img/search-icon.svg) no-repeat 19px center;
   padding-left: 44px;
   border: #EAECF0 1px solid;
@@ -35,11 +35,9 @@
 .header__icon-item {
   position: relative;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
 }
 .header__icon-item img {
-  width: 24px;
+  width: 18px;
 }
 .header__icon-item img:hover {
   filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
@@ -108,6 +106,11 @@
   }
   .header__icons {
     display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .header__input-search {
+    width: 50vw;
   }
 }
 @media screen and (max-width: 1200px) {
