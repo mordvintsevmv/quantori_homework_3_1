@@ -77,5 +77,12 @@
   justify-content: space-between;
   align-items: center;
 }
+.action-buttons__item {
+  cursor: pointer;
+}
+.action-buttons__item:hover {
+  filter: var(--active-filter);
+  will-change: transform;
+}
 
 /*# sourceMappingURL=sidebar.css.map */
