@@ -1,4 +1,7 @@
 .header {
+
+  grid-area: myHeader;
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -77,8 +80,8 @@
   content: '';
 
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
 
   width: 10px;
   height: 10px;
