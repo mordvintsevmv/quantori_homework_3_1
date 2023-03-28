@@ -1,19 +1,28 @@
 .header {
 
+  position: relative;
+
   grid-area: myHeader;
 
   display: flex;
+  gap: 36px;
   align-items: center;
   justify-content: space-evenly;
 
   background: #FFFFFF;
 
   height: 66px;
+  width: calc(100vw - 232px);
+  
   border-bottom: 1px solid #EAECF0;
+
+  &__brand{
+    display: none;
+  }
 
   &__input-search{
     height: 46px;
-    width: 900px;
+    width: 50vw;
 
     background: url(../img/search-icon.svg) no-repeat 19px center;
     padding-left: 44px;
@@ -22,7 +31,13 @@
     border-radius: 6px;
   }
 
-  &__icon{
+  &__icons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__icon-item{
     position: relative;
 
     cursor: pointer;
@@ -90,4 +105,54 @@
   border-radius: 50%;
 
   background: #20C997;
+}
+
+@media screen and (max-width: 900px) {
+  .header{
+    width: 100vw;
+
+    &__brand{
+      display: flex;
+    }
+
+    &__icons{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header{
+    padding: 26px 16px;
+    width: 100vw;
+    height: 150px;
+
+    display: block;
+
+    &__brand{
+      position: absolute;
+      display: flex;
+
+      top: 26px;
+      left: 16px;
+    }
+
+    &__avatar{
+      position: absolute;
+
+      top: 16px;
+      right: 16px;
+    }
+
+    &__icons{
+      display: none;
+    }
+
+    &__input-search{
+      position: absolute;
+      width: 95vw;
+
+      top: 80px
+    }
+  }
 }
