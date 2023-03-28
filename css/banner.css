@@ -6,6 +6,7 @@
   background: #282828;
   padding: 32px 36px;
   color: #FFFFFF;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.0588235294);
   margin-bottom: 32px;
 }
 .banner__text-title {
