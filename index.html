@@ -41,11 +41,13 @@
             content="Responsive layout based on the Figma mockup."
     />
 
-    <!--STYLES-->
+    <!--GENERAL STYLES-->
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link href="css/null.css" rel="stylesheet" type="text/css">
-    <link href="css/header.css" rel="stylesheet" type="text/css">
+
+    <!--COMPONENT STYLES-->
     <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
     <link href="css/banner.css" rel="stylesheet" type="text/css">
     <link href="css/metrics.css" rel="stylesheet" type="text/css">
     <link href="css/chart.css" rel="stylesheet" type="text/css">
@@ -59,10 +61,10 @@
 
     <title>Quantori Homework #3.1</title>
 </head>
+
 <body>
 
 <div class="screen-wrapper">
-
 
     <!--SIDEBAR-->
     <div class="sidebar">
@@ -72,6 +74,7 @@
             <img class="clonify-brand__name" src="img/clonify-name.svg" alt="Clonify">
         </div>
 
+        <!--SIDEBAR - DASHBOARD-->
         <h4 class="sidebar__header">Dashboard</h4>
 
         <nav class="sidebar__navigation navbar">
@@ -102,6 +105,7 @@
 
         </nav>
 
+        <!--SIDEBAR - PAGES-->
         <h4 class="sidebar__header">Pages</h4>
 
         <nav class="sidebar__navigation navbar">
@@ -255,87 +259,87 @@
 
 
             <div class="data-table__apps-wrapper">
-            <table class="data-table__apps apps-table">
-                <tr class="apps-table__header">
-                    <th>Source</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                    <th>User ID</th>
-                    <th>Joined</th>
-                    <th>Group</th>
-                </tr>
+                <table class="data-table__apps apps-table">
+                    <tr class="apps-table__header">
+                        <th>Source</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>User ID</th>
+                        <th>Joined</th>
+                        <th>Group</th>
+                    </tr>
 
-                <tr class="apps-table__row">
-                    <td class="apps-table__source">
-                        <img class="apps-table__source-image" src="img/zeplin-logo.svg" alt="Zeplin app"/>
-                        <p class="apps-table__source-name">Zeplin</p>
-                    </td>
-                    <td>686.00</td>
-                    <td>
-                        <p class="apps-table__status apps-table__status--active">Active</p>
-                    </td>
-                    <td>114423</td>
-                    <td>October</td>
-                    <td>Design</td>
-                </tr>
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/zeplin-logo.svg" alt="Zeplin app"/>
+                            <p class="apps-table__source-name">Zeplin</p>
+                        </td>
+                        <td>686.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--active">Active</p>
+                        </td>
+                        <td>114423</td>
+                        <td>October</td>
+                        <td>Design</td>
+                    </tr>
 
-                <tr class="apps-table__row">
-                    <td class="apps-table__source">
-                        <img class="apps-table__source-image" src="img/figma-logo.svg" alt="Figma app"/>
-                        <p class="apps-table__source-name">Figma</p>
-                    </td>
-                    <td>864.00</td>
-                    <td>
-                        <p class="apps-table__status apps-table__status--pending">Pending</p>
-                    </td>
-                    <td>76223</td>
-                    <td>June</td>
-                    <td>Finance</td>
-                </tr>
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/figma-logo.svg" alt="Figma app"/>
+                            <p class="apps-table__source-name">Figma</p>
+                        </td>
+                        <td>864.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--pending">Pending</p>
+                        </td>
+                        <td>76223</td>
+                        <td>June</td>
+                        <td>Finance</td>
+                    </tr>
 
-                <tr class="apps-table__row">
-                    <td class="apps-table__source">
-                        <img class="apps-table__source-image" src="img/meta-logo.svg" alt="Meta app"/>
-                        <p class="apps-table__source-name">Meta</p>
-                    </td>
-                    <td>176.00</td>
-                    <td>
-                        <p class="apps-table__status">Cancelled</p>
-                    </td>
-                    <td>89453</td>
-                    <td>March</td>
-                    <td>Coding</td>
-                </tr>
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/meta-logo.svg" alt="Meta app"/>
+                            <p class="apps-table__source-name">Meta</p>
+                        </td>
+                        <td>176.00</td>
+                        <td>
+                            <p class="apps-table__status">Cancelled</p>
+                        </td>
+                        <td>89453</td>
+                        <td>March</td>
+                        <td>Coding</td>
+                    </tr>
 
-                <tr class="apps-table__row">
-                    <td class="apps-table__source">
-                        <img class="apps-table__source-image" src="img/angular-logo.svg" alt="Angular app"/>
-                        <p class="apps-table__source-name">Angular</p>
-                    </td>
-                    <td>49.00</td>
-                    <td>
-                        <p class="apps-table__status apps-table__status--active">Active</p>
-                    </td>
-                    <td>11467</td>
-                    <td>February</td>
-                    <td>Marketing</td>
-                </tr>
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/angular-logo.svg" alt="Angular app"/>
+                            <p class="apps-table__source-name">Angular</p>
+                        </td>
+                        <td>49.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--active">Active</p>
+                        </td>
+                        <td>11467</td>
+                        <td>February</td>
+                        <td>Marketing</td>
+                    </tr>
 
-                <tr class="apps-table__row">
-                    <td class="apps-table__source">
-                        <img class="apps-table__source-image" src="img/vue-logo.svg" alt="Vue app"/>
-                        <p class="apps-table__source-name">Vue</p>
-                    </td>
-                    <td>999.00</td>
-                    <td>
-                        <p class="apps-table__status apps-table__status--active">Active</p>
-                    </td>
-                    <td>67385</td>
-                    <td>October</td>
-                    <td>Finance</td>
-                </tr>
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/vue-logo.svg" alt="Vue app"/>
+                            <p class="apps-table__source-name">Vue</p>
+                        </td>
+                        <td>999.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--active">Active</p>
+                        </td>
+                        <td>67385</td>
+                        <td>October</td>
+                        <td>Finance</td>
+                    </tr>
 
-            </table>
+                </table>
             </div>
 
             <div class="data-table__navigation">
