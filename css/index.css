@@ -19,6 +19,7 @@ body {
 
 .content {
   grid-area: myContent;
+  width: calc(100vw - 232px);
 }
 .content__block {
   margin: 32px;
@@ -46,12 +47,24 @@ body {
 }
 .content__block-main {
   padding: 32px 24px;
-  width: 100%;
+  width: inherit;
 }
 
 a {
   text-decoration: none;
   color: #5F6980;
+}
+
+@media screen and (max-width: 900px) {
+  .screen-wrapper {
+    grid-template: "myHeader" "myContent";
+  }
+  .content {
+    width: 100vw;
+  }
+  .content__block {
+    margin: 24px 16px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

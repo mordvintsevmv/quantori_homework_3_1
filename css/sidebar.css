@@ -1,6 +1,5 @@
 .sidebar {
   grid-area: mySidebar;
-  flex-basis: 232px;
   position: sticky;
   top: 0;
   width: 232px;
@@ -84,6 +83,12 @@
 .action-buttons__item:hover {
   filter: var(--active-filter);
   will-change: transform;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=sidebar.css.map */
