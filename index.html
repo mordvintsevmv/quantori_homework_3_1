@@ -131,10 +131,14 @@
     <!--HEADER-->
     <header class="content__header header">
         <input class="header__input-search" type="text" placeholder="Search..."/>
-        <div class="header__icon header__icon--notification"><img src="img/notifications-icon.svg"
-                                                                  alt="notifications"/></div>
-        <div class="header__icon"><img src="img/calendar-icon.svg" alt="calendar"/></div>
-        <div class="header__icon"><img src="img/apps-icon.svg" alt="apps"/></div>
+
+        <div class="header__icons">
+            <div class="header__icon-item header__icon-item--notification">
+                <img src="img/notifications-icon.svg" alt="notifications"/>
+            </div>
+            <div class="header__icon-item"><img src="img/calendar-icon.svg" alt="calendar"/></div>
+            <div class="header__icon-item"><img src="img/apps-icon.svg" alt="apps"/></div>
+        </div>
         <div class="header__avatar avatar avatar--online"><img src="img/avatar.png" alt="avatar"></div>
     </header>
 
@@ -243,6 +247,8 @@
                 <img class="content__block-properties" src="img/dots-vertical-icon.svg" alt="properties"/>
             </div>
 
+
+            <div class="data-table__apps-wrapper">
             <table class="data-table__apps apps-table">
                 <tr class="apps-table__header">
                     <th>Source</th>
@@ -324,6 +330,7 @@
                 </tr>
 
             </table>
+            </div>
 
             <div class="data-table__navigation">
                 <img class="data-table__navigation-previous" src="img/arrow-icon.svg" alt="previous page"/>
