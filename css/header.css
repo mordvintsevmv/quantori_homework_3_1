@@ -20,6 +20,7 @@
   padding-left: 44px;
   border: #EAECF0 1px solid;
   border-radius: 6px;
+  transition: 0.5s;
 }
 .header__input-search:focus {
   outline: none;
@@ -107,6 +108,11 @@
   }
   .header__icons {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__input-search {
+    width: 40vw;
   }
 }
 @media screen and (max-width: 600px) {

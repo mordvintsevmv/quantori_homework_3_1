@@ -30,6 +30,8 @@
 
     border: $border-grey 1px solid;
     border-radius: 6px;
+
+    transition: 0.5s;
   }
 
   &__input-search:focus {
@@ -141,7 +143,6 @@
   }
 }
 
-
 @media screen and (max-width: 900px) {
   .header {
     width: 100vw;
@@ -152,6 +153,15 @@
 
     &__icons {
       display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header {
+    &__input-search {
+      width: 40vw;
     }
   }
 }
