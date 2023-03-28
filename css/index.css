@@ -2,8 +2,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-:root {
-  --active-filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
+a {
+  text-decoration: none;
+  color: #5F6980;
 }
 
 .screen-wrapper {
@@ -43,16 +44,11 @@ body {
   cursor: pointer;
 }
 .content__block-properties:hover {
-  filter: var(--active-filter);
+  filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
 }
 .content__block-main {
   padding: 32px 24px;
   width: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: #5F6980;
 }
 
 @media screen and (max-width: 900px) {

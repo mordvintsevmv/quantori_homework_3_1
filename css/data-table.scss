@@ -1,12 +1,11 @@
 @import "variables";
 
 .data-table {
-
   background: $white;
+
   padding-bottom: 31px;
 
   box-shadow: 0 1px 10px 0 #0000000F;
-
 
   &__apps-wrapper {
     overflow-x: auto;
@@ -18,16 +17,15 @@
     justify-content: center;
     align-items: center;
     gap: 19px;
-
   }
 
   &__navigation-previous {
     rotate: (180deg);
     cursor: pointer;
+  }
 
-    &:hover {
-      filter: invert(30%);
-    }
+  &__navigation-previous:hover {
+    filter: invert(30%);
   }
 
   &__navigation-text {
@@ -39,10 +37,10 @@
 
   &__navigation-next {
     cursor: pointer;
+  }
 
-    &:hover {
-      filter: invert(30%);
-    }
+  &__navigation-next:hover {
+    filter: invert(30%);
   }
 }
 

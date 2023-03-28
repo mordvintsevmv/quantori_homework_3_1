@@ -1,6 +1,6 @@
 @import "variables";
 
-.sidebar{
+.sidebar {
   position: sticky;
   top: 0;
 
@@ -13,13 +13,13 @@
 
   border: 1px solid $border-grey;
 
-  &__brand{
+  &__brand {
     display: flex;
 
     margin: 23px 0 56px 25px;
   }
 
-  &__header{
+  &__header {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 4px;
@@ -29,7 +29,7 @@
     margin: 32px 0 16px 20px;
   }
 
-  &__action-buttons{
+  &__action-buttons {
     position: absolute;
     bottom: 0;
 
@@ -42,13 +42,13 @@
   }
 }
 
-.clonify-brand{
+.clonify-brand {
   gap: 5px;
 
   align-items: center;
 }
 
-.navbar-section{
+.navbar-section {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -58,62 +58,61 @@
 
   cursor: pointer;
 
-
-  &__icon{
+  &__icon {
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    &--active{
-      filter: var(--active-filter);
+
+    &--active {
+      filter: $active-filter;
       will-change: transform;
     }
-
   }
 
-  &__title{
+  &__title {
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
 
-    &--active{
+    &--active {
       color: $dark-grey;
     }
   }
 
-  &__chevron{
+  &__chevron {
     margin-left: auto;
 
-    &--active{
-      filter: var(--active-filter);
+    &--active {
+      filter: $active-filter;
       transform: rotate(180deg);
       will-change: transform;
     }
   }
 
-  &:hover{
-    filter: var(--active-filter);
+  &:hover {
+    filter: $active-filter;
     will-change: transform;
   }
 }
 
-.action-buttons{
+.action-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  &__item{
+  &__item {
     cursor: pointer;
   }
 
-  &__item:hover{
-    filter: var(--active-filter);
+  &__item:hover {
+    filter: $active-filter;
     will-change: transform;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .sidebar{
+  .sidebar {
     display: none;
   }
 }

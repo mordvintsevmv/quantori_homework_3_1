@@ -22,14 +22,12 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 38px;
-
   }
 
   &__text-description {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-
   }
 }
 
@@ -49,8 +47,7 @@
   cursor: pointer;
 
   transition: 0.3s;
-
-
+  
   &__text {
     color: $dark-grey;
     font-weight: 600;

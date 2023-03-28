@@ -1,14 +1,15 @@
 @import "variables";
 
-body{
+body {
   font-family: 'Inter', sans-serif;
 }
 
-:root{
-  --active-filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
+a {
+  text-decoration: none;
+  color: $grey;
 }
 
-.screen-wrapper{
+.screen-wrapper {
   display: grid;
   grid-template: 'mySidebar myHeader' 'mySidebar myContent';
   width: 100vw;
@@ -21,18 +22,17 @@ body{
   line-height: 22px;
 }
 
-.content{
-
+.content {
   grid-area: myContent;
 
   width: calc(100vw - 232px);
 
-  &__block{
+  &__block {
     margin: 32px;
     border-radius: 16px;
   }
 
-  &__block-top{
+  &__block-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,42 +42,37 @@ body{
     border-bottom: 1px solid $border-grey;
   }
 
-  &__block-title{
+  &__block-title {
     font-weight: 600;
     font-size: 18px;
 
     margin-left: 24px;
   }
 
-  &__block-properties{
+  &__block-properties {
     margin-right: 35px;
     cursor: pointer;
 
-    &:hover{
-      filter: var(--active-filter);
+    &:hover {
+      filter: $active-filter;
     }
   }
 
-  &__block-main{
+  &__block-main {
     padding: 32px 24px;
     width: inherit;
   }
 }
 
-a{
-  text-decoration: none;
-  color: $grey;
-}
-
 @media screen and (max-width: 900px) {
-  .screen-wrapper{
+  .screen-wrapper {
     grid-template: 'myHeader' 'myContent';
   }
 
-  .content{
+  .content {
     width: 100vw;
 
-    &__block{
+    &__block {
       margin: 24px 16px;
     }
   }
