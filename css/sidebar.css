@@ -1,0 +1,94 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  grid-area: mySidebar;
+  width: 232px;
+  height: 100vh;
+  background: #FFFFFF;
+  border: 1px solid #EAECF0;
+}
+.sidebar__brand {
+  display: flex;
+  margin: 23px 0 56px 25px;
+}
+.sidebar__header {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9D9FA1;
+  margin: 32px 0 16px 20px;
+}
+.sidebar__action-buttons {
+  position: absolute;
+  bottom: 0;
+  padding: 0 23px;
+  width: inherit;
+  height: 44px;
+  border-top: 1px solid #EAECF0;
+}
+
+.clonify-brand {
+  gap: 5px;
+  align-items: center;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-height: 46px;
+  padding: 0 23px;
+  cursor: pointer;
+}
+.navbar-section__icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.navbar-section__icon--active {
+  filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
+  will-change: transform;
+}
+.navbar-section__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+.navbar-section__title--active {
+  color: #282828;
+}
+.navbar-section__chevron {
+  margin-left: auto;
+}
+.navbar-section__chevron--active {
+  filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
+  transform: rotate(180deg);
+  will-change: transform;
+}
+.navbar-section:hover {
+  filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
+  will-change: transform;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.action-buttons__item {
+  cursor: pointer;
+}
+.action-buttons__item:hover {
+  filter: brightness(0) invert(0) invert(9%) sepia(0%) saturate(584%) hue-rotate(230deg) brightness(103%) contrast(84%);
+  will-change: transform;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=sidebar.css.map */

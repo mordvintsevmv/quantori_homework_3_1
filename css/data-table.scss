@@ -1,0 +1,131 @@
+@import "variables";
+
+.data-table {
+  background: $white;
+
+  padding-bottom: 31px;
+
+  box-shadow: 0 1px 10px 0 #0000000F;
+
+  &__apps-wrapper {
+    overflow-x: auto;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+  }
+
+  &__navigation-previous {
+    rotate: (180deg);
+    cursor: pointer;
+  }
+
+  &__navigation-previous:hover {
+    filter: invert(30%);
+  }
+
+  &__navigation-text {
+    font-weight: 400;
+    font-size: 18px;
+
+    color: $dark-grey;
+  }
+
+  &__navigation-next {
+    cursor: pointer;
+  }
+
+  &__navigation-next:hover {
+    filter: invert(30%);
+  }
+}
+
+.apps-table {
+  width: 100%;
+  min-width: 1140px;
+
+  overflow-x: auto;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+  white-space: nowrap;
+
+
+  margin-bottom: 31px;
+
+  & td, & th {
+    font-weight: 400;
+    font-size: 14px;
+    color: $grey;
+
+    text-align: left;
+  }
+
+  & td {
+    height: 76px;
+  }
+
+  & td:first-child, & th:first-child {
+    padding-left: 24px;
+  }
+
+  &__header {
+    background-color: #F9FAFB;
+    height: 54px;
+  }
+
+  &__row {
+    border-bottom: 1px solid $border-grey;
+  }
+
+  &__source {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__source-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: $dark-grey;
+
+  }
+
+  &__source-image {
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 0 #0000000F;
+  }
+
+  &__status {
+    height: 24px;
+    width: fit-content;
+
+    padding: 0 10px;
+
+    background-color: $light-grey;
+    border-radius: 100px;
+
+    font-weight: 600;
+    font-size: 12px;
+    color: $grey;
+    text-align: center;
+  }
+
+  &__status--active {
+    background-color: $light-green;
+    color: $green;
+  }
+
+  &__status--pending {
+    background-color: $light-orange;
+    color: $orange;
+  }
+}

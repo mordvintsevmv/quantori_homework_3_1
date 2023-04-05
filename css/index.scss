@@ -1,0 +1,79 @@
+@import "variables";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $grey;
+}
+
+.screen-wrapper {
+  display: grid;
+  grid-template: 'mySidebar myHeader' 'mySidebar myContent';
+  width: 100vw;
+
+  background: $light-grey;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.content {
+  grid-area: myContent;
+
+  width: calc(100vw - 232px);
+
+  &__block {
+    margin: 32px;
+    border-radius: 16px;
+  }
+
+  &__block-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 62px;
+    border-bottom: 1px solid $border-grey;
+  }
+
+  &__block-title {
+    font-weight: 600;
+    font-size: 18px;
+
+    margin-left: 24px;
+  }
+
+  &__block-properties {
+    margin-right: 35px;
+    cursor: pointer;
+
+    &:hover {
+      filter: $active-filter;
+    }
+  }
+
+  &__block-main {
+    padding: 32px 24px;
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .screen-wrapper {
+    grid-template: 'myHeader' 'myContent';
+  }
+
+  .content {
+    width: 100vw;
+
+    &__block {
+      margin: 24px 16px;
+    }
+  }
+}

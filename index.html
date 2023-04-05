@@ -41,13 +41,318 @@
             content="Responsive layout based on the Figma mockup."
     />
 
-    <!--STYLES-->
+    <!--GENERAL STYLES-->
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link href="css/null.css" rel="stylesheet" type="text/css">
 
+    <!--COMPONENT STYLES-->
+    <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/banner.css" rel="stylesheet" type="text/css">
+    <link href="css/metrics.css" rel="stylesheet" type="text/css">
+    <link href="css/chart.css" rel="stylesheet" type="text/css">
+    <link href="css/data-table.css" rel="stylesheet" type="text/css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
     <title>Quantori Homework #3.1</title>
 </head>
+
 <body>
+
+<div class="screen-wrapper">
+
+    <!--SIDEBAR-->
+    <div class="sidebar">
+
+        <div class="sidebar__brand clonify-brand">
+            <img class="clonify-brand__logo" src="img/clonify-logo.svg" alt="Clonify logo"/>
+            <img class="clonify-brand__name" src="img/clonify-name.svg" alt="Clonify">
+        </div>
+
+        <!--SIDEBAR - DASHBOARD-->
+        <h4 class="sidebar__header">Dashboard</h4>
+
+        <nav class="sidebar__navigation navbar">
+
+            <div class="navbar__section navbar-section">
+                <img class="navbar-section__icon" src="img/dashboard-icon.svg" alt="dashboard icon"/>
+                <a class="navbar-section__title" href="#">Dashboard</a>
+                <img class="navbar-section__chevron" src="img/chevron.svg" alt="open/close"/>
+            </div>
+
+            <div class="navbar__section navbar-section">
+                <img class="navbar-section__icon" src="img/messages-icon.svg" alt="messages icon"/>
+                <a class="navbar-section__title" href="#">Messages</a>
+                <img class="navbar-section__chevron" src="img/chevron.svg" alt="open/close"/>
+            </div>
+
+            <div class="navbar__section navbar-section">
+                <img class="navbar-section__icon" src="img/friends-icon.svg" alt="friends icon"/>
+                <a class="navbar-section__title" href="#">Friends</a>
+                <img class="navbar-section__chevron" src="img/chevron.svg" alt="open/close"/>
+            </div>
+
+            <div class="navbar__section navbar-section">
+                <img class="navbar-section__icon" src="img/apps-icon.svg" alt="apps icon"/>
+                <a class="navbar-section__title" href="#">Apps</a>
+                <img class="navbar-section__chevron" src="img/chevron.svg" alt="open/close"/>
+            </div>
+
+        </nav>
+
+        <!--SIDEBAR - PAGES-->
+        <h4 class="sidebar__header">Pages</h4>
+
+        <nav class="sidebar__navigation navbar">
+
+            <div class="navbar__section navbar-section">
+                <img class="navbar-section__icon" src="img/help-icon.svg" alt="help icon"/>
+                <a class="navbar-section__title" href="#">Help Center</a>
+                <img class="navbar-section__chevron" src="img/chevron.svg" alt="open/close"/>
+            </div>
+
+            <div class="navbar__section navbar-section">
+                <img class="navbar-section__icon" src="img/file-icon.svg" alt="file icon"/>
+                <a class="navbar-section__title" href="#">File Manager</a>
+                <img class="navbar-section__chevron" src="img/chevron.svg" alt="open/close"/>
+            </div>
+
+        </nav>
+
+        <div class="sidebar__action-buttons action-buttons">
+            <img class="action-buttons__item" src="img/settings-icon.svg" alt="settings"/>
+            <img class="action-buttons__item" src="img/logout-icon.svg" alt="logout"/>
+            <img class="action-buttons__item" src="img/globe-icon.svg" alt="browse"/>
+        </div>
+
+    </div>
+
+    <!--HEADER-->
+    <header class="content__header header">
+
+        <div class="clonify-brand header__brand">
+            <img class="clonify-brand__logo" src="img/clonify-logo.svg" alt="Clonify logo"/>
+            <img class="clonify-brand__name" src="img/clonify-name.svg" alt="Clonify">
+        </div>
+
+        <input class="header__input-search" type="text" placeholder="Search..."/>
+
+        <div class="header__icons">
+            <div class="header__icon-item header__icon-item--notification">
+                <img src="img/notifications-icon.svg" alt="notifications"/>
+            </div>
+            <div class="header__icon-item"><img src="img/calendar-icon.svg" alt="calendar"/></div>
+            <div class="header__icon-item"><img src="img/apps-icon.svg" alt="apps"/></div>
+        </div>
+        <div class="header__avatar avatar avatar--online"><img src="img/avatar.png" alt="avatar"></div>
+    </header>
+
+    <div class="content">
+
+        <!--BANNER-->
+        <div class="content__block banner">
+
+            <div class="banner__text ">
+                <h3 class="banner__text-title">Unlock premium stats</h3>
+                <p class="banner__text-description">Get up to 10TB of storage for a limited time</p>
+            </div>
+
+            <div class="banner__button upgrade-button">
+                <img class="upgrade-button__bolt" src="img/bolt-icon.svg" alt="bolt logo"/>
+                <p class="upgrade-button__text">Upgrade</p>
+            </div>
+
+        </div>
+
+        <!--METRICS-->
+        <div class="content__block metrics">
+
+            <div class="metrics__card card">
+                <div class="card__title">Revenue</div>
+                <div class="card__amount">$56,945</div>
+                <div class="card__percent card__percent--positive">+45%</div>
+                <div class="card__info">From 4.6%</div>
+            </div>
+
+            <div class="metrics__card card">
+                <div class="card__title">Users</div>
+                <div class="card__amount">76.8%</div>
+                <div class="card__percent card__percent--negative">-1.7%</div>
+                <div class="card__info">From 4.6%</div>
+            </div>
+
+            <div class="metrics__card card">
+                <div class="card__title">New Signups</div>
+                <div class="card__amount">116</div>
+                <div class="card__percent ">0.00</div>
+                <div class="card__info"></div>
+            </div>
+
+            <div class="metrics__card card">
+                <div class="card__title">Retention</div>
+                <div class="card__amount">12.67%</div>
+                <div class="card__percent card__percent--positive">+0.06%</div>
+                <div class="card__info">From 4.6%</div>
+            </div>
+        </div>
+
+        <!--GRAPHIC-->
+        <div class="content__block chart">
+
+            <div class="content__block-top">
+                <div class="content__block-title">Performance</div>
+                <img class="content__block-properties" src="img/dots-vertical-icon.svg" alt="properties"/>
+            </div>
+
+            <div class="content__block-main">
+
+                <div class="chart__wrapper">
+                    <div class="chart__rows">
+                        <p class="chart__rows-item">400</p>
+                        <p class="chart__rows-item">300</p>
+                        <p class="chart__rows-item">200</p>
+                        <p class="chart__rows-item">100</p>
+                        <p class="chart__rows-item">0</p>
+                    </div>
+
+                    <img class="chart__graphic" src="img/chart.svg" alt="chart"/>
+
+                    <div class="chart__columns">
+                        <p class="chart__columns-item">Sun</p>
+                        <p class="chart__columns-item">Mon</p>
+                        <p class="chart__columns-item">Tue</p>
+                        <p class="chart__columns-item">Wed</p>
+                        <p class="chart__columns-item">Thu</p>
+                        <p class="chart__columns-item">Fri</p>
+                        <p class="chart__columns-item">Sat</p>
+                    </div>
+                </div>
+
+                <div class="chart__defs">
+                    <div class="chart__defs-item">
+                        <div class="chart__defs-color chart__defs-color--blue"></div>
+                        <div class="chart__defs-name">Instagram</div>
+                    </div>
+
+                    <div class="chart__defs-item">
+                        <div class="chart__defs-color chart__defs-color--green"></div>
+                        <div class="chart__defs-name">Facebook</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--TABLE-->
+        <div class="content__block data-table">
+
+            <div class="content__block-top">
+                <div class="content__block-title">Installed apps</div>
+                <img class="content__block-properties" src="img/dots-vertical-icon.svg" alt="properties"/>
+            </div>
+
+
+            <div class="data-table__apps-wrapper">
+                <table class="data-table__apps apps-table">
+                    <tr class="apps-table__header">
+                        <th>Source</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>User ID</th>
+                        <th>Joined</th>
+                        <th>Group</th>
+                    </tr>
+
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/zeplin-logo.svg" alt="Zeplin app"/>
+                            <p class="apps-table__source-name">Zeplin</p>
+                        </td>
+                        <td>686.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--active">Active</p>
+                        </td>
+                        <td>114423</td>
+                        <td>October</td>
+                        <td>Design</td>
+                    </tr>
+
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/figma-logo.svg" alt="Figma app"/>
+                            <p class="apps-table__source-name">Figma</p>
+                        </td>
+                        <td>864.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--pending">Pending</p>
+                        </td>
+                        <td>76223</td>
+                        <td>June</td>
+                        <td>Finance</td>
+                    </tr>
+
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/meta-logo.svg" alt="Meta app"/>
+                            <p class="apps-table__source-name">Meta</p>
+                        </td>
+                        <td>176.00</td>
+                        <td>
+                            <p class="apps-table__status">Cancelled</p>
+                        </td>
+                        <td>89453</td>
+                        <td>March</td>
+                        <td>Coding</td>
+                    </tr>
+
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/angular-logo.svg" alt="Angular app"/>
+                            <p class="apps-table__source-name">Angular</p>
+                        </td>
+                        <td>49.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--active">Active</p>
+                        </td>
+                        <td>11467</td>
+                        <td>February</td>
+                        <td>Marketing</td>
+                    </tr>
+
+                    <tr class="apps-table__row">
+                        <td class="apps-table__source">
+                            <img class="apps-table__source-image" src="img/vue-logo.svg" alt="Vue app"/>
+                            <p class="apps-table__source-name">Vue</p>
+                        </td>
+                        <td>999.00</td>
+                        <td>
+                            <p class="apps-table__status apps-table__status--active">Active</p>
+                        </td>
+                        <td>67385</td>
+                        <td>October</td>
+                        <td>Finance</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="data-table__navigation">
+                <img class="data-table__navigation-previous" src="img/arrow-icon.svg" alt="previous page"/>
+                <p class="data-table__navigation-text">1/15</p>
+                <img class="data-table__navigation-next" src="img/arrow-icon.svg" alt="next page"/>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>

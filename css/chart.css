@@ -1,0 +1,95 @@
+.chart {
+  background: #FFFFFF;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.0588235294);
+}
+.chart__wrapper {
+  position: relative;
+}
+.chart__rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  height: 260px;
+  width: 23px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #9D9FA1;
+}
+.chart__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 65px;
+  margin-bottom: 32px;
+  width: 94%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #9D9FA1;
+}
+.chart__graphic {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  display: inline;
+  vertical-align: middle;
+  height: 260px;
+  width: 94%;
+}
+.chart__defs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5F6980;
+}
+.chart__defs-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.chart__defs-color {
+  width: 12px;
+  height: 12px;
+  background-color: #9D9FA1;
+  border-radius: 50%;
+}
+.chart__defs-color--blue {
+  background: #5A9CFE;
+}
+.chart__defs-color--green {
+  background: #20C997;
+}
+
+@media screen and (max-width: 1200px) {
+  .chart__graphic {
+    width: 92%;
+  }
+  .chart__columns {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .chart__graphic {
+    width: 84%;
+    left: 57px;
+  }
+  .chart__columns {
+    width: 84%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chart__graphic {
+    width: 82%;
+    left: 57px;
+  }
+  .chart__columns {
+    width: 82%;
+  }
+}
+
+/*# sourceMappingURL=chart.css.map */
